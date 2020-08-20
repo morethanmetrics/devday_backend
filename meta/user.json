@@ -1,0 +1,64 @@
+{
+    "file": "devday_backend_2020/meta/user.json",
+    "name_human_underscore": "user",
+    "name_underscore": "user",
+    "name_camelcase": "User",
+    "parent_name_underscore": "",
+    "parent_chain": "",
+    "super_name_underscore": "",
+    "parents":[
+	{
+	    "name": "",
+	    "parents": []
+	}
+    ],
+    "children":[
+	{
+	    "name": "",
+	    "children": []
+	}
+    ],
+    "fancy shit": [
+    	{"friendly_id": {"name": "initials"}},
+    	{"sortable":  false}
+    ],
+    "attributes": [
+	{
+	    "name": "initials",
+	    "type": "string",
+	    "null": true,
+	    "user_access": ["read"]
+	},
+	{
+	    "name": "first_name",
+	    "type": "string",
+	    "null": true,
+	    "user_access": ["read"]
+	},
+	{
+	    "name": "last_name",
+	    "type": "string",
+	    "null": true,
+	    "user_access": ["read"]
+	},
+	{
+	    "name": "name",
+	    "type": "string",
+	    "null": true,
+	    "user_access": ["read"]
+	},
+    ],
+    "associations": [
+    ],
+    "actions": [
+	{"index": {}},
+	{"create": {}},
+	{"update": {}},
+	{"destroy": {}},
+	{"new": {}},
+	{"show": {}},
+	{"edit": {}},
+	{"duplicate": {}},
+	{"move": {}}
+    ]
+} 
