@@ -30,12 +30,12 @@ gem "bootsnap", ">= 1.4.2", require: false
 
 group :development, :test do
   gem "standard"
-  gem 'pry-rails'
-  gem 'pry-byebug'
-  gem 'rspec-rails'
-  gem 'shoulda-matchers'
-  gem 'factory_bot_rails'
-  gem 'faker'
+  gem "pry-rails"
+  gem "pry-byebug"
+  gem "rspec-rails"
+  gem "shoulda-matchers"
+  gem "factory_bot_rails"
+  gem "faker"
 end
 
 group :development do
@@ -53,7 +53,7 @@ group :test do
   gem "selenium-webdriver"
   # Easy installation and use of web drivers to run system tests with browsers
   gem "webdrivers"
-  gem 'simplecov', require: false
+  gem "simplecov", require: false
 end
 
 gem "devise"
