@@ -8,19 +8,18 @@ Rails.application.routes.draw do
   #  For example:
   #     root to: "home#index" # bin/rails generate controller Home index
   devise_scope :user do
-    #root :to => "devise/sessions#new"
+    # root :to => "devise/sessions#new"
     authenticated :user do
-      root 'devise/registrations#edit', as: :authenticated_root
-      #root 'home#index', as: :authenticated_root
+      root "devise/registrations#edit", as: :authenticated_root
+      # root 'home#index', as: :authenticated_root
     end
     unauthenticated do
-      root 'devise/sessions#new', as: :unauthenticated_root
+      root "devise/sessions#new", as: :unauthenticated_root
     end
   end
 
-  resources :organizations, :only => [:index, :show]
+  resources :organizations, only: [:index, :show]
 
-  root :to => 'devise/sessions#new'
-  #root to: "home#index"
-
+  root to: "devise/sessions#new"
+  # root to: "home#index"
 end
