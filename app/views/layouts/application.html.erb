@@ -9,11 +9,23 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= link_to 'Organizations', organizations_path %>
-    <hr>
+  <body class="font-sans font-normal leading-normal text-gray-900 bg-gray-200">
+    <nav class="flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-white shadow sm:items-baseline w-full">
+      <ul class="flex">
+        <li class="mr-6">
+          <%= link_to 'Home', root_path, class: 'ext-2xl no-underline text-grey-darkest hover:text-blue-dark' %>
+        </li>
+        <li class="mr-6">
+          <%= link_to 'Organizations', organizations_path, class: 'ext-2xl no-underline text-grey-darkest hover:text-blue-dark' %>
+        </li>
+      </ul>
+    </nav>
+
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= yield %>
+
+    <main class="container mx-auto">
+      <%= yield %>
+    </main>
   </body>
 </html>
